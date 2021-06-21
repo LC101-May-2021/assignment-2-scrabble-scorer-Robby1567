@@ -63,7 +63,7 @@ let scrabbleScore = function(word) {
   letterPoints = 0 
   for (let i = 0; i < word.length; i++) {
     if ((word[i]) in newPointStructure) {
-      letterPoints = newPointStructure[word[i]] += letterPoints
+      letterPoints += newPointStructure[word[i]] 
     }
     }
 	return console.log(`Score for ${word}: ${letterPoints}`);
